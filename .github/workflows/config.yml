@@ -7,6 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: KengoTODA/actions-setup-docker-compose@v1
+        with:
+          version: '2.14.2'
+      
       - uses: actions/checkout@v2
 
       - name: Checkout (copy) gh-pages repository to GitHub runner
